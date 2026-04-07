@@ -60,8 +60,10 @@ const SERVICES = [
   },
 ]
 
-export default function Services() {
+export default function Services({ ctaLabel, ctaTo }) {
   const [headerRef, headerVisible] = useScrollReveal()
+  const label = ctaLabel ?? 'Schedule a Free Consultation'
+  const to = ctaTo ?? '/contact'
 
   return (
     <section className="services" aria-labelledby="services-heading">
@@ -81,8 +83,8 @@ export default function Services() {
         </div>
 
         <div className="services__cta">
-          <Link to="/contact" className="btn-primary">
-            Schedule a Free Consultation
+          <Link to={to} className="btn-primary">
+            {label}
           </Link>
         </div>
       </div>

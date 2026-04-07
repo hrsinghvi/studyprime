@@ -41,7 +41,7 @@ export default function HomePage() {
     <>
       <Hero />
       <Stats />
-      <Services />
+      <Services ctaLabel="Learn More" ctaTo="/services" />
       <ResultsCarousel />
       <HomeCalendly />
     </>
