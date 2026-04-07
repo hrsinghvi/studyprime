@@ -23,9 +23,6 @@ export default function Hero() {
         </p>
         <div className="hero__ctas">
           <Link to="/contact" className="btn-primary hero__cta">
-            Get Started
-          </Link>
-          <Link to="/contact" className="btn-secondary hero__cta">
             Schedule a Free Consultation
           </Link>
         </div>
