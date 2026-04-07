@@ -17,4 +17,16 @@ describe('useCountUp', () => {
     rerender({ shouldStart: false })
     expect(result.current).toBe(0)
   })
+
+  it('advances toward target when shouldStart transitions to true', async () => {
+    const { result, rerender } = renderHook(
+      ({ shouldStart }) => useCountUp(100, 500, shouldStart),
+      { initialProps: { shouldStart: false } }
+    )
+    expect(result.current).toBe(0)
+    rerender({ shouldStart: true })
+    // After a tick, the count should have advanced beyond 0
+    await new Promise(r => setTimeout(r, 100))
+    expect(result.current).toBeGreaterThan(0)
+  })
 })

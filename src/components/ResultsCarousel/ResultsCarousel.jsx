@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import './ResultsCarousel.css'
 
 const REVIEWS = [
@@ -46,6 +47,8 @@ function ReviewCard({ review }) {
 }
 
 export default function ResultsCarousel() {
+  const trackRef = useRef(null)
+
   return (
     <section className="carousel-section" aria-labelledby="results-heading">
       <div className="container">
@@ -57,7 +60,7 @@ export default function ResultsCarousel() {
       </div>
 
       <div className="carousel-wrapper" aria-label="Student reviews carousel">
-        <div className="carousel-track">
+        <div className="carousel-track" ref={trackRef}>
           {[...REVIEWS, ...REVIEWS].map((review, i) => (
             <ReviewCard key={i} review={review} />
           ))}

@@ -18,8 +18,7 @@
   transition: border-color var(--transition-default),
               box-shadow var(--transition-default),
               transform var(--transition-default),
-              opacity 500ms ease,
-              translate 500ms ease;
+              opacity 500ms ease;
 }
 
 .service-card:hover {

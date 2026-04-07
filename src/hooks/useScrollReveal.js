@@ -15,7 +15,7 @@ export default function useScrollReveal(options = {}) {
           observer.disconnect()
         }
       },
-      { threshold: options.threshold ?? 0.1, ...options }
+      { threshold: 0.1, ...options }
     )
 
     observer.observe(element)
