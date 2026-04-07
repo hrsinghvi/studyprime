@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import useScrollReveal from '../../hooks/useScrollReveal'
 import './Services.css'
 
@@ -80,14 +81,9 @@ export default function Services() {
         </div>
 
         <div className="services__cta">
-          <a
-            href="https://calendly.com/help-studyprime/30min"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary"
-          >
+          <Link to="/contact" className="btn-primary">
             Schedule a Free Consultation
-          </a>
+          </Link>
         </div>
       </div>
     </section>
