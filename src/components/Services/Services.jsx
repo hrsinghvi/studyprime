@@ -78,6 +78,17 @@ export default function Services() {
             <ServiceCard key={service.title} service={service} index={i} />
           ))}
         </div>
+
+        <div className="services__cta">
+          <a
+            href="https://calendly.com/help-studyprime/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary"
+          >
+            Schedule a Free Consultation
+          </a>
+        </div>
       </div>
     </section>
   )
