@@ -3,12 +3,6 @@
   background: var(--bg-secondary);
 }
 
-.careers__layout {
-  display: grid;
-  grid-template-columns: 65fr 35fr;
-  gap: var(--space-4);
-  align-items: start;
-}
 
 .careers__subtitle {
   font-size: 1.125rem;
@@ -98,34 +92,6 @@
   opacity: 0.8;
 }
 
-/* CTA card */
-.careers__cta {
-  background: var(--bg-primary);
-  border: 2px solid var(--accent);
-  border-radius: var(--radius-md);
-  padding: var(--space-4);
-  position: sticky;
-  top: calc(var(--nav-height) + 20px);
-}
-
-.careers__cta-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: 12px;
-}
-
-.careers__cta-body {
-  font-size: 0.9375rem;
-  color: var(--text-secondary);
-  line-height: 1.7;
-  margin-bottom: 24px;
-}
-
-.careers__cta-btn {
-  width: 100%;
-  justify-content: center;
-}
 
 /* Modal */
 .modal-overlay {
@@ -240,16 +206,6 @@
   gap: 16px;
 }
 
-@media (max-width: 1024px) {
-  .careers__layout {
-    grid-template-columns: 1fr;
-  }
-
-  .careers__cta {
-    position: static;
-    order: -1;
-  }
-}
 
 @media (max-width: 640px) {
   .careers {

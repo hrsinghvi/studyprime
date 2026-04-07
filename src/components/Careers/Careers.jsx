@@ -73,45 +73,25 @@ export default function Careers() {
   return (
     <section className="careers" aria-labelledby="careers-heading">
       <div className="container">
-        <div className="careers__layout">
-          {/* Left: Job listings */}
-          <div className="careers__listings">
-            <div
-              ref={headerRef}
-              className={`reveal ${headerVisible ? 'visible' : ''}`}
-            >
-              <h2 id="careers-heading">Join Our Team</h2>
-              <p className="careers__subtitle">
-                We're hiring passionate tutors. Help us change education.
-              </p>
-            </div>
+        <div
+          ref={headerRef}
+          className={`reveal ${headerVisible ? 'visible' : ''}`}
+        >
+          <h2 id="careers-heading">Join Our Team</h2>
+          <p className="careers__subtitle">
+            We're hiring passionate tutors. Help us change education.
+          </p>
+        </div>
 
-            <div className="careers__jobs">
-              {JOBS.map((job, i) => (
-                <JobCard
-                  key={job.id}
-                  job={job}
-                  index={i}
-                  onViewDetails={() => setSelectedJob(job)}
-                />
-              ))}
-            </div>
-          </div>
-
-          {/* Right: CTA */}
-          <aside className="careers__cta" aria-label="Join our team call to action">
-            <h3 className="careers__cta-title">Passionate About Education?</h3>
-            <p className="careers__cta-body">
-              We're looking for tutors who care about student success. Apply now to
-              join a team making a real difference in Bay Area students' lives.
-            </p>
-            <button
-              className="btn-primary careers__cta-btn"
-              onClick={() => setSelectedJob(JOBS[0])}
-            >
-              Apply Now
-            </button>
-          </aside>
+        <div className="careers__jobs">
+          {JOBS.map((job, i) => (
+            <JobCard
+              key={job.id}
+              job={job}
+              index={i}
+              onViewDetails={() => setSelectedJob(job)}
+            />
+          ))}
         </div>
       </div>
 
