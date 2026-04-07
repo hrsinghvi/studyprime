@@ -56,7 +56,7 @@ export const JOBS = [
     shortDesc: 'Tutor high school science with hands-on, engaging methods.',
     fullDesc: 'We need science tutors who can make complex topics engaging and accessible for high school students. You will tutor in one or more of Biology, Chemistry, and Physics, covering coursework and AP exam preparation with clear, example-based explanations.',
     requirements: [
-      'Bachelor\'s degree in a science field',
+
       'Experience with high school science curriculum',
       'Laboratory experience preferred',
       'Flexible scheduling available',
