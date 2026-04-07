@@ -41,7 +41,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="navbar__logo" aria-label="Study Prime home">
             <img src="/studyprimelogo.png" alt="" className="navbar__logo-img" aria-hidden="true" />
-            Study <span className="navbar__logo-accent">Prime</span>
+            Study<span className="navbar__logo-accent">Prime</span>
           </Link>
 
           {/* Desktop nav links */}
