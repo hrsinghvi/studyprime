@@ -1,6 +1,6 @@
 .stats {
   padding: var(--space-6) 0;
-  background: var(--bg-primary);
+  background: #2D2D38;
 }
 
 .stats__grid {
