@@ -27,11 +27,11 @@
   color: var(--text-primary);
   text-decoration: none;
   flex-shrink: 0;
+  grid-column: 1;
+  justify-self: start;
 }
 
 .navbar__logo-accent {
-  font-family: var(--font-accent);
-  font-style: italic;
   color: var(--accent);
 }
 
@@ -85,6 +85,7 @@
   align-items: center;
   justify-content: flex-end;
   gap: 12px;
+  grid-column: 3;
 }
 
 .navbar__btn {

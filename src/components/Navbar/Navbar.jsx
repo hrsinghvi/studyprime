@@ -40,7 +40,7 @@ export default function Navbar() {
         <div className="navbar__inner">
           {/* Logo */}
           <Link to="/" className="navbar__logo" aria-label="Study Prime home">
-            Study Prime
+            Study <span className="navbar__logo-accent">Prime</span>
           </Link>
 
           {/* Desktop nav links */}
