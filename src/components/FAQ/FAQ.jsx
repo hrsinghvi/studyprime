@@ -25,7 +25,7 @@ const FAQS = [
   },
   {
     question: 'Can I schedule a free consultation?',
-    answer: 'Yes. We offer a free 20-minute consultation to discuss your goals, assess your current standing, and match you with the right tutor. Fill out the contact form and we will schedule a time that works for you.',
+    answer: 'Yes. We offer a free 30-minute consultation to discuss your goals, assess your current standing, and match you with the right tutor. Fill out the contact form and we will schedule a time that works for you.',
   },
   {
     question: 'Do you guarantee score improvements?',
