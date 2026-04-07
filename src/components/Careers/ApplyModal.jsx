@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { supabase } from '../../lib/supabase'
 import { useToast } from '../../context/ToastContext'
 import { validateEmail } from '../ContactForm/ContactForm'
+import '../ContactForm/ContactForm.css'
 
 export default function ApplyModal({ job, onClose }) {
   const { addToast } = useToast()
