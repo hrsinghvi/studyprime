@@ -13,13 +13,11 @@ export const JOBS = [
     shortDesc: 'Experienced SAT/ACT tutors to join our Bay Area team.',
     fullDesc: 'We are seeking expert SAT/ACT tutors who are passionate about helping students reach their full potential. You will work one-on-one with students to develop personalized strategies, administer practice tests, and track measurable score improvements.',
     requirements: [
-      '2+ years of SAT/ACT tutoring experience',
       'Scored in the 95th percentile or higher on the SAT or ACT',
-      'Bachelor\'s degree required',
       'Strong communication and patience',
       'Flexible scheduling — evenings and weekends required',
     ],
-    compensation: '$40–$70/hour depending on experience',
+    compensation: '$20–$40/hour depending on experience',
   },
   {
     id: 'math-tutor',
