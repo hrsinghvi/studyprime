@@ -2,15 +2,9 @@ import { useRef } from 'react'
 import './ResultsCarousel.css'
 
 const REVIEWS = [
-  { name: 'Aiden Park', profile: 'High School Senior, 1520 SAT', stars: 5, text: 'Study Prime completely changed how I approach the SAT. My score went from 1310 to 1520 in four months. The practice tests and weekly feedback were game changers.' },
-  { name: 'Maya Rodriguez', profile: 'High School Junior, 34 ACT', stars: 5, text: 'I went from a 28 to a 34 on the ACT. My tutor was incredibly patient and broke down the science section in a way that finally made sense. Could not recommend more.' },
-  { name: 'James Liu', profile: '10th Grade, AP Chemistry', stars: 5, text: 'My chemistry grade went from a C to an A in six weeks. The tutor explained concepts I had been confused about for months in just one session. Genuinely impressive.' },
   { name: 'Sofia Chen', profile: '8th Grade, Math', stars: 5, text: 'My daughter struggled with algebra for two years. After three months with Study Prime, she is confident and her grade went from a D to a B+. Incredible transformation.' },
   { name: 'Ethan Nguyen', profile: 'High School Senior, 1490 SAT', stars: 5, text: 'The tutors actually care about your progress. They tailor every session to exactly what you need. My SAT went up 180 points in three months of working together.' },
   { name: 'Priya Patel', profile: 'High School Junior, AP Biology', stars: 5, text: 'AP Bio was overwhelming until I started working with Study Prime. My tutor helped me build a study system and I ended up scoring a 5 on the exam.' },
-  { name: 'Lucas Thompson', profile: '9th Grade, English', stars: 5, text: 'My son always struggled with writing essays. His English tutor taught him a clear structure and now he actually enjoys writing. His teacher noticed the difference immediately.' },
-  { name: 'Hannah Kim', profile: 'High School Senior, 1540 SAT', stars: 5, text: 'From 1380 to 1540 in five months. The personalized approach made all the difference. I knew exactly which areas to focus on and the progress was steady the whole time.' },
-  { name: 'Carlos Martinez', profile: '11th Grade, AP US History', stars: 5, text: 'My AP US History tutor helped me connect events and themes in a way my class never did. I went from failing practice tests to scoring a 4 on the exam.' },
   { name: 'Zoe Williams', profile: 'High School Junior, 32 ACT', stars: 5, text: 'I had taken the ACT twice and plateaued at 29. After eight sessions with Study Prime, I hit a 32. The timing strategies for the math section alone were worth it.' },
   { name: 'Raj Sharma', profile: '7th Grade, Math', stars: 5, text: 'My son was really behind in math and losing confidence fast. His tutor was patient, encouraging, and found ways to make the material click. He is now ahead of his class.' },
   { name: 'Ananya Iyer', profile: 'High School Senior, 1510 SAT', stars: 5, text: 'I was stuck at a 1380 for months. Study Prime helped me identify exactly where I was losing points and my score jumped to 1510. The structured approach made all the difference.' },
