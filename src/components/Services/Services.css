@@ -5,8 +5,16 @@
 
 .services__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: var(--space-3);
+}
+
+.services__grid .service-card:nth-child(-n+3) {
+  grid-column: span 2;
+}
+
+.services__grid .service-card:nth-child(n+4) {
+  grid-column: span 3;
 }
 
 .service-card {
@@ -48,6 +56,11 @@
   .services__grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .services__grid .service-card:nth-child(-n+3),
+  .services__grid .service-card:nth-child(n+4) {
+    grid-column: span 1;
+  }
 }
 
 @media (max-width: 640px) {
@@ -57,5 +70,10 @@
 
   .services__grid {
     grid-template-columns: 1fr;
+  }
+
+  .services__grid .service-card:nth-child(-n+3),
+  .services__grid .service-card:nth-child(n+4) {
+    grid-column: span 1;
   }
 }

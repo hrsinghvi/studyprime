@@ -10,9 +10,9 @@ export default function HomePage() {
     <>
       <Hero />
       <Services />
+      <FAQ limit={6} />
       <ResultsCarousel />
       <Stats />
-      <FAQ limit={6} />
       <ContactForm />
     </>
   )
