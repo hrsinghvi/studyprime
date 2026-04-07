@@ -1,3 +1,19 @@
+import Hero from '../components/Hero/Hero'
+import Services from '../components/Services/Services'
+import ResultsCarousel from '../components/ResultsCarousel/ResultsCarousel'
+import Stats from '../components/Stats/Stats'
+import FAQ from '../components/FAQ/FAQ'
+import ContactForm from '../components/ContactForm/ContactForm'
+
 export default function HomePage() {
-  return <div style={{ minHeight: '60vh', padding: '40px', color: 'var(--text-primary)' }}>Home Page</div>
+  return (
+    <>
+      <Hero />
+      <Services />
+      <ResultsCarousel />
+      <Stats />
+      <FAQ limit={6} />
+      <ContactForm />
+    </>
+  )
 }
