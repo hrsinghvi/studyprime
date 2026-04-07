@@ -40,9 +40,9 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <Stats />
       <Services />
       <ResultsCarousel />
-      <Stats />
       <HomeCalendly />
     </>
   )
