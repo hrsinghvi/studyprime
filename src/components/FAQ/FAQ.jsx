@@ -13,7 +13,7 @@ const FAQS = [
   },
   {
     question: 'How are your tutors qualified?',
-    answer: 'All Study Prime tutors are rigorously vetted. They hold bachelor\'s degrees or higher in their subject areas, have demonstrated teaching ability, and score in the 95th percentile or above on any standardized test they teach. We also conduct ongoing quality reviews to ensure consistently excellent sessions.',
+    answer: 'Every Study Prime tutor has personally excelled in the subject they teach — our SAT and ACT tutors have scored in the 95th percentile or above, and our subject tutors have mastered their field through years of hands-on experience. We only bring on tutors who know their subject inside and out, so students learn from someone who has truly been there.',
   },
   {
     question: 'Do you offer group sessions?',
