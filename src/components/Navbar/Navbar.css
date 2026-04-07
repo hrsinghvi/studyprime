@@ -13,10 +13,11 @@
   max-width: var(--container-max);
   margin: 0 auto;
   height: 100%;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 40px;
+  position: relative;
 }
 
 /* Logo */
@@ -27,8 +28,6 @@
   color: var(--text-primary);
   text-decoration: none;
   flex-shrink: 0;
-  grid-column: 1;
-  justify-self: start;
 }
 
 .navbar__logo-accent {
@@ -40,6 +39,9 @@
   display: flex;
   align-items: center;
   gap: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .navbar__link {
@@ -83,9 +85,8 @@
 .navbar__actions {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   gap: 12px;
-  grid-column: 3;
+  flex-shrink: 0;
 }
 
 .navbar__btn {
@@ -238,6 +239,5 @@
 
   .navbar__inner {
     padding: 0 20px;
-    grid-template-columns: 1fr auto;
   }
 }
