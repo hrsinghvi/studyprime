@@ -31,7 +31,7 @@ export const JOBS = [
       'Experience working with K-12 students',
       'Patience, enthusiasm, and genuine love for teaching',
     ],
-    compensation: '$35–$55/hour depending on experience',
+    compensation: '$20–$40/hour depending on experience',
   },
   {
     id: 'english-tutor',
@@ -46,7 +46,7 @@ export const JOBS = [
       'Ability to explain complex literary concepts clearly',
       'Minimum 10 hours/week availability',
     ],
-    compensation: '$35–$55/hour depending on experience',
+    compensation: '$20–$40/hour depending on experience',
   },
   {
     id: 'science-tutor',
@@ -61,7 +61,7 @@ export const JOBS = [
       'Laboratory experience preferred',
       'Flexible scheduling available',
     ],
-    compensation: '$38–$60/hour depending on experience and subject',
+    compensation: '$20–$40/hour depending on experience',
   },
 ]
 
