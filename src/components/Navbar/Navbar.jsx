@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { Link, NavLink, useNavigate, useLocation } from 'react-router-dom'
 import { useAuth } from '../../context/AuthContext'
 import './Navbar.css'
 
@@ -16,11 +16,12 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
   const { user, signOut } = useAuth()
   const navigate = useNavigate()
+  const location = useLocation()
 
   // Close menu on route change
   useEffect(() => {
     setMenuOpen(false)
-  }, [navigate])
+  }, [location.pathname])
 
   // Prevent body scroll when menu open
   useEffect(() => {
@@ -29,6 +30,7 @@ export default function Navbar() {
   }, [menuOpen])
 
   async function handleSignOut() {
+    setMenuOpen(false)
     await signOut()
     navigate('/')
   }
@@ -94,11 +96,12 @@ export default function Navbar() {
         </div>
       </header>
 
-      {/* Mobile menu overlay */}
+      {/* Mobile menu — inert when closed to prevent keyboard focus on hidden elements */}
       <div
         id="mobile-menu"
         className={`navbar__mobile ${menuOpen ? 'navbar__mobile--open' : ''}`}
         aria-hidden={!menuOpen}
+        {...(!menuOpen ? { inert: '' } : {})}
       >
         <button
           className="navbar__mobile-close"
@@ -123,23 +126,21 @@ export default function Navbar() {
           ))}
           <div className="navbar__mobile-actions">
             {user ? (
-              <button className="btn-secondary" onClick={handleSignOut} style={{ width: '100%' }}>
+              <button className="btn-secondary navbar__mobile-action-btn" onClick={handleSignOut}>
                 Sign Out
               </button>
             ) : (
               <>
                 <Link
                   to="/sign-in"
-                  className="btn-secondary"
-                  style={{ display: 'block', textAlign: 'center' }}
+                  className="btn-secondary navbar__mobile-action-btn"
                   onClick={() => setMenuOpen(false)}
                 >
                   Sign In
                 </Link>
                 <Link
                   to="/contact"
-                  className="btn-primary"
-                  style={{ display: 'block', textAlign: 'center' }}
+                  className="btn-primary navbar__mobile-action-btn"
                   onClick={() => setMenuOpen(false)}
                 >
                   Get Started
