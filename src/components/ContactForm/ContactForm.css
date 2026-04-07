@@ -111,6 +111,13 @@
   background: var(--accent-subtle);
 }
 
+.topic-dropdown__empty {
+  padding: 10px 16px;
+  font-size: 0.9375rem;
+  color: var(--text-tertiary);
+  font-style: italic;
+}
+
 /* Textarea */
 .contact-form__textarea {
   resize: vertical;

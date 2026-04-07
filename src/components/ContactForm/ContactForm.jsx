@@ -70,6 +70,7 @@ export default function ContactForm() {
         : [...prev.topics, topic],
     }))
     if (errors.topics) setErrors(prev => ({ ...prev, topics: '' }))
+    setTopicSearch('')
   }
 
   function removeTopic(topic) {
@@ -255,12 +256,14 @@ export default function ContactForm() {
                 onBlur={() => setTimeout(() => setTopicOpen(false), 150)}
                 aria-labelledby="topics-label"
                 aria-haspopup="listbox"
-                aria-expanded={topicOpen}
+                aria-expanded={topicOpen ? 'true' : 'false'}
                 aria-describedby={errors.topics ? 'contact-topics-error' : undefined}
               />
-              {topicOpen && filteredTopics.length > 0 && (
+              {topicOpen && (
                 <ul className="topic-dropdown__list" role="listbox" aria-labelledby="topics-label">
-                  {filteredTopics.map(topic => (
+                  {filteredTopics.length === 0 ? (
+                    <li className="topic-dropdown__empty" aria-disabled="true">No subjects match</li>
+                  ) : filteredTopics.map(topic => (
                     <li
                       key={topic}
                       role="option"
