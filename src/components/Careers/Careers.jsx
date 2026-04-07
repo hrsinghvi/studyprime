@@ -21,14 +21,14 @@ export const JOBS = [
   },
   {
     id: 'math-tutor',
-    title: 'Math Tutor (Elementary & Middle School)',
+    title: 'Math Tutor (Elementary, Middle & High School)',
     location: 'Bay Area, CA',
     type: 'Part-time',
-    shortDesc: 'Help elementary and middle school students master math fundamentals.',
-    fullDesc: 'Join our team helping younger students build confidence and mastery in mathematics. You will cover topics from basic arithmetic through pre-algebra and geometry, working to identify and close gaps while building genuine understanding.',
+    shortDesc: 'Help students from elementary through high school master math.',
+    fullDesc: 'Join our team helping students at every level build confidence and mastery in mathematics. You will cover topics ranging from basic arithmetic through pre-algebra, geometry, algebra, and up to pre-calculus and calculus, working to identify gaps and build genuine understanding.',
     requirements: [
       'Bachelor\'s degree in Math, Education, or related field preferred',
-      'Experience working with K-8 students',
+      'Experience working with K-12 students',
       'Patience, enthusiasm, and genuine love for teaching',
       'Minimum 10 hours/week availability',
     ],
