@@ -11,8 +11,7 @@ const GRADE_OPTIONS = [
 
 const TOPIC_OPTIONS = [
   'SAT Prep', 'ACT Prep', 'Math', 'English', 'Science', 'Biology',
-  'Chemistry', 'Physics', 'History', 'Languages', 'Spanish', 'French',
-  'Mandarin', 'Writing', 'Reading Comprehension', 'AP Courses',
+  'Chemistry', 'Physics', 'History', 'Writing', 'Reading Comprehension', 'AP Courses',
 ]
 
 function validateEmail(email) {

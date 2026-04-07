@@ -9,7 +9,7 @@ const FAQS = [
   },
   {
     question: 'What subjects do you tutor?',
-    answer: 'We offer tutoring in SAT and ACT prep, Mathematics (K-12 through calculus), English and Language Arts, Biology, Chemistry, Physics, History, and Languages including Spanish, French, and Mandarin. If your subject is not listed, contact us and we will do our best to match you with the right tutor.',
+    answer: 'We offer tutoring in SAT and ACT prep, Mathematics (K-12 through calculus), English and Language Arts, Biology, Chemistry, Physics, and History. If your subject is not listed, contact us and we will do our best to match you with the right tutor.',
   },
   {
     question: 'How are your tutors qualified?',

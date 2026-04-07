@@ -57,16 +57,6 @@ const SERVICES = [
       </svg>
     ),
   },
-  {
-    title: 'Languages',
-    description: 'Spanish, French, Mandarin, and more. Conversational practice, grammar foundations, and AP Language exam preparation.',
-    icon: (
-      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-        <circle cx="24" cy="24" r="14" stroke="#13ae53" strokeWidth="2"/>
-        <path d="M24 10c0 0-6 6-6 14s6 14 6 14M24 10c0 0 6 6 6 14s-6 14-6 14M10 24h28" stroke="#13ae53" strokeWidth="2" strokeLinecap="round"/>
-      </svg>
-    ),
-  },
 ]
 
 export default function Services() {
