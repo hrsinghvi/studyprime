@@ -73,8 +73,6 @@ function FAQItem({ faq, index, isOpen, onToggle }) {
       <div
         className="faq-item__body"
         id={answerId}
-        role="region"
-        aria-labelledby={questionId}
         hidden={!isOpen}
       >
         <p className="faq-item__answer">{faq.answer}</p>
@@ -104,10 +102,10 @@ export default function FAQ({ limit }) {
           <p className="faq__subtitle">Everything you need to know</p>
         </div>
 
-        <div className="faq__list" role="list">
+        <div className="faq__list">
           {displayFaqs.map((faq, i) => (
             <FAQItem
-              key={i}
+              key={faq.question}
               faq={faq}
               index={i}
               isOpen={openIndex === i}
