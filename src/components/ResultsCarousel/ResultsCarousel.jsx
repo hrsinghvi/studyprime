@@ -13,10 +13,12 @@ const REVIEWS = [
   { name: 'Carlos Martinez', profile: '11th Grade, AP US History', stars: 5, text: 'My AP US History tutor helped me connect events and themes in a way my class never did. I went from failing practice tests to scoring a 4 on the exam.' },
   { name: 'Zoe Williams', profile: 'High School Junior, 32 ACT', stars: 5, text: 'I had taken the ACT twice and plateaued at 29. After eight sessions with Study Prime, I hit a 32. The timing strategies for the math section alone were worth it.' },
   { name: 'Raj Sharma', profile: '7th Grade, Math', stars: 5, text: 'My son was really behind in math and losing confidence fast. His tutor was patient, encouraging, and found ways to make the material click. He is now ahead of his class.' },
-  { name: 'Emma Johnson', profile: 'High School Senior, 1500 SAT', stars: 5, text: 'I started Study Prime four months before my test with a 1290. My final score was 1500. The reading and writing sections improved the most thanks to focused practice each week.' },
-  { name: 'David Okafor', profile: '10th Grade, Physics', stars: 5, text: 'Physics was my worst subject. My tutor turned it around by connecting equations to real examples. I went from failing to getting the highest grade on the final exam.' },
-  { name: 'Isabella Torres', profile: 'High School Junior, 33 ACT', stars: 5, text: 'Study Prime helped me raise my ACT from 27 to 33 in under three months. The sessions were focused and my tutor always came prepared with a clear plan for improvement.' },
-  { name: 'Noah Chang', profile: '12th Grade, Calculus', stars: 5, text: 'AP Calculus was the hardest class I had ever taken. My tutor broke every concept down from scratch and I finished the year with an A and a 5 on the AP exam.' },
+  { name: 'Ananya Iyer', profile: 'High School Senior, 1510 SAT', stars: 5, text: 'I was stuck at a 1380 for months. Study Prime helped me identify exactly where I was losing points and my score jumped to 1510. The structured approach made all the difference.' },
+  { name: 'Vikram Nair', profile: '10th Grade, Physics', stars: 5, text: 'Physics was my worst subject. My tutor turned it around by connecting equations to real examples. I went from failing to getting the highest grade on the final exam.' },
+  { name: 'Ishaan Mehta', profile: 'High School Junior, 33 ACT', stars: 5, text: 'Study Prime helped me raise my ACT from 27 to 33 in under three months. The sessions were focused and my tutor always came prepared with a clear plan for improvement.' },
+  { name: 'Shreya Kapoor', profile: '12th Grade, Calculus', stars: 5, text: 'AP Calculus was the hardest class I had ever taken. My tutor broke every concept down from scratch and I finished the year with an A and a 5 on the AP exam.' },
+  { name: 'Arjun Reddy', profile: 'High School Senior, 1500 SAT', stars: 5, text: 'I started Study Prime four months before my test with a 1290. My final score was 1500. The reading and writing sections improved the most thanks to focused practice each week.' },
+  { name: 'Divya Krishnan', profile: '9th Grade, Math', stars: 5, text: 'My daughter was really struggling with geometry and losing her confidence. After two months with Study Prime her grade went from a C to an A and she actually looks forward to math now.' },
 ]
 
 function StarRating({ count }) {
