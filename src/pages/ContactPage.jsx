@@ -21,7 +21,7 @@ export default function ContactPage() {
       </div>
       <div
         className="calendly-inline-widget"
-        data-url="https://calendly.com/help-studyprime/30min?primary_color=13ae53&text_color=ffffff&background_color=262731"
+        data-url="https://calendly.com/help-studyprime/30min?primary_color=13ae53&text_color=ffffff&background_color=1a1b1f"
         style={{ minWidth: '320px', height: '700px' }}
       />
     </div>
