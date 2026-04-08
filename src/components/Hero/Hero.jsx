@@ -1,9 +1,13 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { GooeyFilter } from '../ui/GooeyFilter'
+import { PixelTrail } from '../ui/PixelTrail'
+import { useScreenSize } from '../../hooks/useScreenSize'
 import './Hero.css'
 
 export default function Hero() {
   const [scrollHint, setScrollHint] = useState(false)
+  const screenSize = useScreenSize()
 
   useEffect(() => {
     const timer = setTimeout(() => setScrollHint(true), 3000)
@@ -12,6 +16,20 @@ export default function Hero() {
 
   return (
     <section className="hero" aria-label="Hero">
+      <GooeyFilter id="hero-gooey" strength={5} />
+      <div
+        className="hero__pixel-trail"
+        style={{ filter: 'url(#hero-gooey)' }}
+        aria-hidden="true"
+      >
+        <PixelTrail
+          pixelSize={screenSize.lessThan('md') ? 20 : 28}
+          fadeDuration={600}
+          delay={200}
+          pixelClassName="hero__pixel-dot"
+        />
+      </div>
+
       <div className="hero__grid-overlay" aria-hidden="true" />
 
       <div className="hero__content container">
