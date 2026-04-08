@@ -75,7 +75,7 @@ export default function Navbar() {
                   Sign In
                 </Link>
                 <Link to="/contact" className="btn-primary navbar__btn">
-                  Get Started
+                  Book Free Consultation
                 </Link>
               </>
             )}
@@ -143,7 +143,7 @@ export default function Navbar() {
                   className="btn-primary navbar__mobile-action-btn"
                   onClick={() => setMenuOpen(false)}
                 >
-                  Get Started
+                  Book Free Consultation
                 </Link>
               </>
             )}
