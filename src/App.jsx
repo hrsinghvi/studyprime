@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
 import { AuthProvider } from './context/AuthContext'
 import { ToastProvider } from './context/ToastContext'
 import Navbar from './components/Navbar/Navbar'
@@ -14,6 +15,7 @@ const CareersPage = lazy(() => import('./pages/CareersPage'))
 const SignInPage = lazy(() => import('./pages/SignInPage'))
 const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage'))
 const TermsPage = lazy(() => import('./pages/TermsPage'))
+const LocalCityPage = lazy(() => import('./pages/LocalCityPage'))
 
 function PageLoader() {
   return (
@@ -31,6 +33,7 @@ function PageLoader() {
 
 export default function App() {
   return (
+    <HelmetProvider>
     <BrowserRouter>
       <AuthProvider>
         <ToastProvider>
@@ -47,6 +50,7 @@ export default function App() {
                 <Route path="/sign-in" element={<SignInPage />} />
                 <Route path="/privacy" element={<PrivacyPolicyPage />} />
                 <Route path="/terms" element={<TermsPage />} />
+                <Route path="/tutoring/:city" element={<LocalCityPage />} />
               </Routes>
             </Suspense>
           </main>
@@ -54,5 +58,6 @@ export default function App() {
         </ToastProvider>
       </AuthProvider>
     </BrowserRouter>
+    </HelmetProvider>
   )
 }
