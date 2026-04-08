@@ -35,7 +35,12 @@ export default function Navbar() {
         <div className="navbar__inner">
 
           {/* Logo — far left */}
-          <Link to="/" className="navbar__logo" aria-label="Study Prime home">
+          <Link
+            to="/"
+            className="navbar__logo"
+            aria-label="Study Prime home"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
             <img src="/studyprimelogo.png" alt="" className="navbar__logo-img" aria-hidden="true" />
             <span className="navbar__logo-name">StudyPrime</span>
           </Link>
