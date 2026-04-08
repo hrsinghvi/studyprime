@@ -12,7 +12,14 @@ export default function Hero() {
 
   return (
     <section className="hero" aria-label="Hero">
+      <div className="hero__grid-overlay" aria-hidden="true" />
+
       <div className="hero__content container">
+        <div className="hero__badge" aria-hidden="true">
+          <span className="hero__badge-dot" />
+          Bay Area's Premier Tutoring Service
+        </div>
+
         <h1 className="hero__title">
           Your Path to{' '}
           <em className="serif hero__title-accent">Excellence</em>
