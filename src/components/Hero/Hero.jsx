@@ -22,7 +22,17 @@ export default function Hero() {
 
         <h1 className="hero__title">
           Your Path to{' '}
-          <em className="serif hero__title-accent">Excellence</em>
+          <em className="serif hero__title-accent">
+            {'Excellence'.split('').map((char, i) => (
+              <span
+                key={i}
+                className="hero__letter"
+                style={{ animationDelay: `${300 + i * 60}ms` }}
+              >
+                {char}
+              </span>
+            ))}
+          </em>
         </h1>
         <p className="hero__subtitle">
           Expert SAT, ACT, and subject tutoring for students K–12.
