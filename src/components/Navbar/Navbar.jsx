@@ -71,11 +71,11 @@ export default function Navbar() {
               </button>
             ) : (
               <>
-                <Link to="/sign-in" className="btn-secondary navbar__btn">
-                  Sign In
-                </Link>
                 <Link to="/contact" className="btn-primary navbar__btn">
                   Book Free Consultation
+                </Link>
+                <Link to="/sign-in" className="btn-secondary navbar__btn">
+                  Sign In
                 </Link>
               </>
             )}
