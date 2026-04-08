@@ -6,87 +6,18 @@
   justify-content: center;
   padding: var(--space-7) 0;
   position: relative;
-  overflow: hidden;
 }
 
-/* Decorative blobs */
-.hero__blob {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(80px);
-  pointer-events: none;
-}
-
-.hero__blob--1 {
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(19, 174, 83, 0.18) 0%, transparent 70%);
-  top: -100px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: blob-drift 8s ease-in-out infinite alternate;
-}
-
-.hero__blob--2 {
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(19, 174, 83, 0.1) 0%, transparent 70%);
-  bottom: 60px;
-  right: 10%;
-  animation: blob-drift 10s ease-in-out infinite alternate-reverse;
-}
-
-/* Subtle dot grid overlay */
-.hero__grid-overlay {
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(circle, rgba(122, 125, 133, 0.18) 1px, transparent 1px);
-  background-size: 32px 32px;
-  pointer-events: none;
-  mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, black 30%, transparent 100%);
-  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, black 30%, transparent 100%);
-}
-
-/* Content */
 .hero__content {
   text-align: center;
-  max-width: 860px;
-  position: relative;
-  z-index: 1;
-}
-
-/* Badge */
-.hero__badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(19, 174, 83, 0.12);
-  border: 1px solid rgba(19, 174, 83, 0.35);
-  color: var(--accent);
-  font-size: 0.8125rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  padding: 6px 16px;
-  border-radius: 100px;
-  margin-bottom: 28px;
-  animation: hero-fade-up 600ms cubic-bezier(0.4, 0, 0.2, 1) both;
-}
-
-.hero__badge-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 6px var(--accent);
-  animation: pulse-dot 2s ease-in-out infinite;
+  max-width: 800px;
 }
 
 .hero__title {
   font-size: 4.5rem;
   font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -0.03em;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
   color: var(--text-primary);
   margin-bottom: var(--space-3);
   animation: hero-fade-up 600ms cubic-bezier(0.4, 0, 0.2, 1) 100ms both;
@@ -113,7 +44,6 @@
   justify-content: center;
   flex-wrap: wrap;
   animation: hero-fade-up 600ms cubic-bezier(0.4, 0, 0.2, 1) 300ms both;
-  margin-bottom: 48px;
 }
 
 .hero__cta {
@@ -121,48 +51,6 @@
   justify-content: center;
 }
 
-.hero__cta--main {
-  padding: 14px 36px;
-  font-size: 1rem;
-  box-shadow: 0 0 32px rgba(19, 174, 83, 0.35);
-}
-
-/* Trust indicators */
-.hero__trust {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 32px;
-  animation: hero-fade-up 600ms cubic-bezier(0.4, 0, 0.2, 1) 400ms both;
-}
-
-.hero__trust-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-
-.hero__trust-value {
-  font-size: 1.375rem;
-  font-weight: 700;
-  color: var(--text-primary);
-}
-
-.hero__trust-label {
-  font-size: 0.75rem;
-  color: var(--text-tertiary);
-  font-weight: 500;
-  letter-spacing: 0.02em;
-}
-
-.hero__trust-divider {
-  width: 1px;
-  height: 36px;
-  background: rgba(122, 125, 133, 0.3);
-}
-
-/* Scroll hint */
 .hero__scroll-hint {
   position: absolute;
   bottom: 32px;
@@ -174,7 +62,6 @@
   gap: 6px;
   color: var(--text-tertiary);
   animation: pulse 1.5s ease-in-out infinite;
-  z-index: 1;
 }
 
 .hero__scroll-text {
@@ -184,11 +71,10 @@
   text-transform: uppercase;
 }
 
-/* Animations */
 @keyframes hero-fade-up {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(16px);
   }
   to {
     opacity: 1;
@@ -201,31 +87,6 @@
   50% { opacity: 1; }
 }
 
-@keyframes pulse-dot {
-  0%, 100% { opacity: 1; box-shadow: 0 0 6px var(--accent); }
-  50% { opacity: 0.6; box-shadow: 0 0 12px var(--accent); }
-}
-
-@keyframes blob-drift {
-  from { transform: translateX(-50%) translateY(0px); }
-  to { transform: translateX(-50%) translateY(30px); }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hero__title {
-    font-size: 3rem;
-  }
-
-  .hero__trust {
-    gap: 20px;
-  }
-
-  .hero__trust-value {
-    font-size: 1.125rem;
-  }
-}
-
 @media (max-width: 640px) {
   .hero__title {
     font-size: 2.25rem;
@@ -236,15 +97,13 @@
     white-space: normal;
   }
 
-  .hero__trust {
-    gap: 16px;
+  .hero__ctas {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .hero__trust-divider {
-    height: 28px;
-  }
-
-  .hero__trust-label {
-    font-size: 0.6875rem;
+  .hero__cta {
+    width: 100%;
+    max-width: 280px;
   }
 }
