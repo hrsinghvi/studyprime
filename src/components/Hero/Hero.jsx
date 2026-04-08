@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { WebGLShader } from '../ui/WebGLShader'
 import './Hero.css'
 
 export default function Hero() {
@@ -12,6 +13,8 @@ export default function Hero() {
 
   return (
     <section className="hero" aria-label="Hero">
+      <WebGLShader />
+      <div className="hero__shader-overlay" aria-hidden="true" />
       <div className="hero__grid-overlay" aria-hidden="true" />
 
       <div className="hero__content container">

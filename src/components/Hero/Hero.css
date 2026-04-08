@@ -9,6 +9,15 @@
   overflow: hidden;
 }
 
+/* Shader overlay — darkens the WebGL background so content stays legible */
+.hero__shader-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(38, 39, 49, 0.55) 0%, rgba(38, 39, 49, 0.82) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
 /* Dot grid */
 .hero__grid-overlay {
   position: absolute;
