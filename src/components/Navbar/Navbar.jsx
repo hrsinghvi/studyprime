@@ -4,7 +4,6 @@ import { useAuth } from '../../context/AuthContext'
 import './Navbar.css'
 
 const NAV_LINKS = [
-  { to: '/', label: 'Home' },
   { to: '/services', label: 'Services' },
   { to: '/results', label: 'Results' },
   { to: '/contact', label: 'Contact' },
@@ -17,12 +16,8 @@ export default function Navbar() {
   const navigate = useNavigate()
   const location = useLocation()
 
-  // Close menu on route change
-  useEffect(() => {
-    setMenuOpen(false)
-  }, [location.pathname])
+  useEffect(() => { setMenuOpen(false) }, [location.pathname])
 
-  // Prevent body scroll when menu open
   useEffect(() => {
     document.body.style.overflow = menuOpen ? 'hidden' : ''
     return () => { document.body.style.overflow = '' }
@@ -38,21 +33,21 @@ export default function Navbar() {
     <>
       <header className="navbar" role="banner">
         <div className="navbar__inner">
-          {/* Logo */}
+
+          {/* Logo — far left */}
           <Link to="/" className="navbar__logo" aria-label="Study Prime home">
             <img src="/studyprimelogo.png" alt="" className="navbar__logo-img" aria-hidden="true" />
-            <span>StudyPrime</span>
+            <span className="navbar__logo-name">StudyPrime</span>
           </Link>
 
-          {/* Desktop nav links */}
+          {/* Nav links — centered */}
           <nav className="navbar__links" aria-label="Main navigation">
             {NAV_LINKS.map(({ to, label }) => (
               <NavLink
                 key={to}
                 to={to}
-                end={to === '/'}
                 className={({ isActive }) =>
-                  `navbar__link ${isActive ? 'navbar__link--active' : ''}`
+                  `navbar__link${isActive ? ' navbar__link--active' : ''}`
                 }
               >
                 {label}
@@ -60,30 +55,27 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* Desktop CTAs */}
+          {/* CTAs — far right */}
           <div className="navbar__actions">
             {user ? (
-              <button
-                className="btn-secondary navbar__btn"
-                onClick={handleSignOut}
-              >
+              <button className="navbar__btn-signin" onClick={handleSignOut}>
                 Sign Out
               </button>
             ) : (
               <>
-                <Link to="/contact" className="btn-primary navbar__btn">
+                <Link to="/contact" className="navbar__btn-book">
                   Book Free Consultation
                 </Link>
-                <Link to="/sign-in" className="btn-secondary navbar__btn">
+                <Link to="/sign-in" className="navbar__btn-signin">
                   Sign In
                 </Link>
               </>
             )}
           </div>
 
-          {/* Hamburger */}
+          {/* Hamburger (mobile) */}
           <button
-            className={`navbar__hamburger ${menuOpen ? 'navbar__hamburger--open' : ''}`}
+            className={`navbar__hamburger${menuOpen ? ' navbar__hamburger--open' : ''}`}
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={menuOpen}
@@ -96,10 +88,10 @@ export default function Navbar() {
         </div>
       </header>
 
-      {/* Mobile menu — inert when closed to prevent keyboard focus on hidden elements */}
+      {/* Mobile drawer */}
       <div
         id="mobile-menu"
-        className={`navbar__mobile ${menuOpen ? 'navbar__mobile--open' : ''}`}
+        className={`navbar__mobile${menuOpen ? ' navbar__mobile--open' : ''}`}
         aria-hidden={!menuOpen}
         {...(!menuOpen ? { inert: '' } : {})}
       >
@@ -115,9 +107,8 @@ export default function Navbar() {
             <NavLink
               key={to}
               to={to}
-              end={to === '/'}
               className={({ isActive }) =>
-                `navbar__mobile-link ${isActive ? 'navbar__mobile-link--active' : ''}`
+                `navbar__mobile-link${isActive ? ' navbar__mobile-link--active' : ''}`
               }
               onClick={() => setMenuOpen(false)}
             >
@@ -126,23 +117,15 @@ export default function Navbar() {
           ))}
           <div className="navbar__mobile-actions">
             {user ? (
-              <button className="btn-secondary navbar__mobile-action-btn" onClick={handleSignOut}>
+              <button className="navbar__btn-signin navbar__mobile-action-btn" onClick={handleSignOut}>
                 Sign Out
               </button>
             ) : (
               <>
-                <Link
-                  to="/sign-in"
-                  className="btn-secondary navbar__mobile-action-btn"
-                  onClick={() => setMenuOpen(false)}
-                >
+                <Link to="/sign-in" className="navbar__btn-signin navbar__mobile-action-btn" onClick={() => setMenuOpen(false)}>
                   Sign In
                 </Link>
-                <Link
-                  to="/contact"
-                  className="btn-primary navbar__mobile-action-btn"
-                  onClick={() => setMenuOpen(false)}
-                >
+                <Link to="/contact" className="navbar__btn-book navbar__mobile-action-btn" onClick={() => setMenuOpen(false)}>
                   Book Free Consultation
                 </Link>
               </>
@@ -151,7 +134,6 @@ export default function Navbar() {
         </nav>
       </div>
 
-      {/* Mobile backdrop */}
       {menuOpen && (
         <div
           className="navbar__backdrop"
