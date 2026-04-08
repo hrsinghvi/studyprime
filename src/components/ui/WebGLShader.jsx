@@ -1,23 +1,31 @@
 import { useEffect, useRef } from 'react'
+import * as THREE from 'three'
 
 export function WebGLShader() {
   const canvasRef = useRef(null)
+  const sceneRef = useRef({
+    scene: null,
+    camera: null,
+    renderer: null,
+    mesh: null,
+    uniforms: null,
+    animationId: null,
+  })
 
   useEffect(() => {
+    if (!canvasRef.current) return
+
     const canvas = canvasRef.current
-    if (!canvas) return
+    const refs = sceneRef.current
 
-    const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl')
-    if (!gl) return
-
-    const vertSrc = `
-      attribute vec2 position;
+    const vertexShader = `
+      attribute vec3 position;
       void main() {
-        gl_Position = vec4(position, 0.0, 1.0);
+        gl_Position = vec4(position, 1.0);
       }
     `
 
-    const fragSrc = `
+    const fragmentShader = `
       precision highp float;
       uniform vec2 resolution;
       uniform float time;
@@ -42,72 +50,77 @@ export function WebGLShader() {
       }
     `
 
-    const compileShader = (type, src) => {
-      const shader = gl.createShader(type)
-      gl.shaderSource(shader, src)
-      gl.compileShader(shader)
-      return shader
+    const initScene = () => {
+      refs.scene = new THREE.Scene()
+      refs.renderer = new THREE.WebGLRenderer({ canvas, antialias: true })
+      refs.renderer.setPixelRatio(window.devicePixelRatio)
+      refs.renderer.setClearColor(new THREE.Color(0x000000))
+
+      refs.camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, -1)
+
+      refs.uniforms = {
+        resolution: { value: [canvas.offsetWidth, canvas.offsetHeight] },
+        time: { value: 0.0 },
+        xScale: { value: 1.0 },
+        yScale: { value: 0.5 },
+        distortion: { value: 0.05 },
+      }
+
+      const position = [
+        -1.0, -1.0, 0.0,
+         1.0, -1.0, 0.0,
+        -1.0,  1.0, 0.0,
+         1.0, -1.0, 0.0,
+        -1.0,  1.0, 0.0,
+         1.0,  1.0, 0.0,
+      ]
+
+      const positions = new THREE.BufferAttribute(new Float32Array(position), 3)
+      const geometry = new THREE.BufferGeometry()
+      geometry.setAttribute('position', positions)
+
+      const material = new THREE.RawShaderMaterial({
+        vertexShader,
+        fragmentShader,
+        uniforms: refs.uniforms,
+        side: THREE.DoubleSide,
+      })
+
+      refs.mesh = new THREE.Mesh(geometry, material)
+      refs.scene.add(refs.mesh)
+
+      handleResize()
     }
 
-    const vert = compileShader(gl.VERTEX_SHADER, vertSrc)
-    const frag = compileShader(gl.FRAGMENT_SHADER, fragSrc)
-
-    const program = gl.createProgram()
-    gl.attachShader(program, vert)
-    gl.attachShader(program, frag)
-    gl.linkProgram(program)
-    gl.useProgram(program)
-
-    const positions = new Float32Array([-1, -1, 1, -1, -1, 1, 1, -1, 1, 1, -1, 1])
-    const buf = gl.createBuffer()
-    gl.bindBuffer(gl.ARRAY_BUFFER, buf)
-    gl.bufferData(gl.ARRAY_BUFFER, positions, gl.STATIC_DRAW)
-
-    const posLoc = gl.getAttribLocation(program, 'position')
-    gl.enableVertexAttribArray(posLoc)
-    gl.vertexAttribPointer(posLoc, 2, gl.FLOAT, false, 0, 0)
-
-    const resLoc = gl.getUniformLocation(program, 'resolution')
-    const timeLoc = gl.getUniformLocation(program, 'time')
-    const xScaleLoc = gl.getUniformLocation(program, 'xScale')
-    const yScaleLoc = gl.getUniformLocation(program, 'yScale')
-    const distLoc = gl.getUniformLocation(program, 'distortion')
-
-    gl.uniform1f(xScaleLoc, 1.0)
-    gl.uniform1f(yScaleLoc, 0.5)
-    gl.uniform1f(distLoc, 0.05)
-
-    let time = 0
-    let animId
-
-    const resize = () => {
-      const w = canvas.parentElement?.offsetWidth || canvas.offsetWidth
-      const h = canvas.parentElement?.offsetHeight || canvas.offsetHeight
-      const dpr = window.devicePixelRatio || 1
-      canvas.width = w * dpr
-      canvas.height = h * dpr
-      gl.viewport(0, 0, canvas.width, canvas.height)
-      gl.uniform2f(resLoc, canvas.width, canvas.height)
+    const animate = () => {
+      if (refs.uniforms) refs.uniforms.time.value += 0.01
+      if (refs.renderer && refs.scene && refs.camera) {
+        refs.renderer.render(refs.scene, refs.camera)
+      }
+      refs.animationId = requestAnimationFrame(animate)
     }
 
-    const render = () => {
-      time += 0.01
-      gl.uniform1f(timeLoc, time)
-      gl.drawArrays(gl.TRIANGLES, 0, 6)
-      animId = requestAnimationFrame(render)
+    const handleResize = () => {
+      if (!refs.renderer || !refs.uniforms || !canvas.parentElement) return
+      const width = canvas.parentElement.offsetWidth
+      const height = canvas.parentElement.offsetHeight
+      refs.renderer.setSize(width, height, false)
+      refs.uniforms.resolution.value = [width, height]
     }
 
-    resize()
-    render()
-    window.addEventListener('resize', resize)
+    initScene()
+    animate()
+    window.addEventListener('resize', handleResize)
 
     return () => {
-      cancelAnimationFrame(animId)
-      window.removeEventListener('resize', resize)
-      gl.deleteProgram(program)
-      gl.deleteShader(vert)
-      gl.deleteShader(frag)
-      gl.deleteBuffer(buf)
+      if (refs.animationId) cancelAnimationFrame(refs.animationId)
+      window.removeEventListener('resize', handleResize)
+      if (refs.mesh) {
+        refs.scene?.remove(refs.mesh)
+        refs.mesh.geometry.dispose()
+        refs.mesh.material.dispose()
+      }
+      refs.renderer?.dispose()
     }
   }, [])
 
