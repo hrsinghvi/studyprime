@@ -16,7 +16,7 @@ export default function Footer() {
       <div className="footer__inner container">
         <div className="footer__left">
           <Link to="/" className="footer__logo" aria-label="Study Prime home">
-            Study <span className="footer__logo-accent">Prime</span>
+            StudyPrime
           </Link>
           <p className="footer__copy">
             © {new Date().getFullYear()} Study Prime. All rights reserved.
