@@ -12,19 +12,49 @@ export default function Hero() {
 
   return (
     <section className="hero" aria-label="Hero">
+      {/* Decorative background blobs */}
+      <div className="hero__blob hero__blob--1" aria-hidden="true" />
+      <div className="hero__blob hero__blob--2" aria-hidden="true" />
+      <div className="hero__grid-overlay" aria-hidden="true" />
+
       <div className="hero__content container">
+        {/* Badge */}
+        <div className="hero__badge" aria-hidden="true">
+          <span className="hero__badge-dot" />
+          Bay Area's Premier Tutoring Service
+        </div>
+
         <h1 className="hero__title">
           Your Path to{' '}
           <em className="serif hero__title-accent">Excellence</em>
         </h1>
+
         <p className="hero__subtitle">
-          Expert SAT, ACT, and subject tutoring for students K–12.
-          Proven results. Local Bay Area.
+          Expert SAT, ACT, and subject tutoring for students K–12. Proven results. Local Bay Area.
         </p>
+
         <div className="hero__ctas">
-          <Link to="/contact" className="btn-primary hero__cta">
+          <Link to="/contact" className="btn-primary hero__cta hero__cta--main">
             Schedule a Free Consultation
           </Link>
+        </div>
+
+        {/* Trust indicators */}
+        <div className="hero__trust">
+          <div className="hero__trust-item">
+            <span className="hero__trust-value">1,000+</span>
+            <span className="hero__trust-label">Students Tutored</span>
+          </div>
+          <div className="hero__trust-divider" aria-hidden="true" />
+          <div className="hero__trust-item">
+            <span className="hero__trust-value">280+</span>
+            <span className="hero__trust-label">Avg. SAT Improvement</span>
+          </div>
+          <div className="hero__trust-divider" aria-hidden="true" />
+          <div className="hero__trust-item">
+            <span className="hero__trust-value">95%</span>
+            <span className="hero__trust-label">Success Rate</span>
+          </div>
         </div>
       </div>
 
