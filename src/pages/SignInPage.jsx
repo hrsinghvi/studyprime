@@ -460,7 +460,7 @@ export default function SignInPage() {
     <div className="sign-in-page">
       <div className="sign-in-page__inner">
         <Link to="/" className="sign-in-page__logo">
-          Study <span className="sign-in-page__logo-accent">Prime</span>
+          StudyPrime
         </Link>
 
         {view === VIEW.SIGN_IN && (
