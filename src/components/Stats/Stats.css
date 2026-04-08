@@ -30,12 +30,14 @@
 .stat-card__number .serif {
   font-family: var(--font-accent);
   font-weight: 400;
+  letter-spacing: 0.03em;
 }
 
 .stat-card__suffix {
   font-family: var(--font-accent);
   font-size: 2rem;
   font-style: italic;
+  letter-spacing: 0.03em;
 }
 
 .stat-card__label {
