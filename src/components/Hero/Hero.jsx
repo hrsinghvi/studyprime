@@ -30,7 +30,7 @@ export default function Hero() {
               <span
                 key={i}
                 className="hero__letter"
-                style={{ animationDelay: `${300 + i * 60}ms` }}
+                style={{ animationDelay: `${50 + i * 40}ms` }}
               >
                 {char}
               </span>

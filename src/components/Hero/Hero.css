@@ -45,7 +45,7 @@
   padding: 8px 20px;
   border-radius: 100px;
   margin-bottom: 28px;
-  animation: hero-fade-up 600ms cubic-bezier(0.4, 0, 0.2, 1) both;
+  animation: hero-fade-up 400ms cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
 .hero__badge-dot {
@@ -72,7 +72,7 @@
   letter-spacing: -0.02em;
   color: var(--text-primary);
   margin-bottom: var(--space-3);
-  animation: hero-fade-up 600ms cubic-bezier(0.4, 0, 0.2, 1) 100ms both;
+  animation: hero-fade-up 400ms cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
 .hero__title-accent {
@@ -101,7 +101,7 @@
   max-width: 800px;
   white-space: nowrap;
   margin: 0 auto var(--space-4);
-  animation: hero-fade-up 600ms cubic-bezier(0.4, 0, 0.2, 1) 200ms both;
+  animation: hero-fade-up 400ms cubic-bezier(0.4, 0, 0.2, 1) 50ms both;
 }
 
 .hero__ctas {
@@ -109,7 +109,7 @@
   gap: 16px;
   justify-content: center;
   flex-wrap: wrap;
-  animation: hero-fade-up 600ms cubic-bezier(0.4, 0, 0.2, 1) 300ms both;
+  animation: hero-fade-up 400ms cubic-bezier(0.4, 0, 0.2, 1) 100ms both;
 }
 
 .hero__cta {
