@@ -12,6 +12,8 @@ const FAQPage = lazy(() => import('./pages/FAQPage'))
 const ContactPage = lazy(() => import('./pages/ContactPage'))
 const CareersPage = lazy(() => import('./pages/CareersPage'))
 const SignInPage = lazy(() => import('./pages/SignInPage'))
+const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage'))
+const TermsPage = lazy(() => import('./pages/TermsPage'))
 
 function PageLoader() {
   return (
@@ -43,6 +45,8 @@ export default function App() {
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/careers" element={<CareersPage />} />
                 <Route path="/sign-in" element={<SignInPage />} />
+                <Route path="/privacy" element={<PrivacyPolicyPage />} />
+                <Route path="/terms" element={<TermsPage />} />
               </Routes>
             </Suspense>
           </main>

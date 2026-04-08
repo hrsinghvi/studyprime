@@ -101,11 +101,32 @@
 .footer__bottom {
   border-top: 1px solid rgba(122, 125, 133, 0.15);
   padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .footer__copy {
   font-size: 0.75rem;
   color: var(--text-tertiary);
+}
+
+.footer__legal-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__legal-link {
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer__legal-link:hover {
+  color: var(--text-secondary);
 }
 
 /* Responsive */

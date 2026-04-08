@@ -61,6 +61,10 @@ export default function Footer() {
 
       <div className="footer__bottom container">
         <p className="footer__copy">© {new Date().getFullYear()} Study Prime. All rights reserved.</p>
+        <div className="footer__legal-links">
+          <Link to="/privacy" className="footer__legal-link">Privacy Policy</Link>
+          <Link to="/terms" className="footer__legal-link">Terms &amp; Conditions</Link>
+        </div>
       </div>
     </footer>
   )
