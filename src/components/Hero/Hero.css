@@ -9,19 +9,6 @@
   overflow: hidden;
 }
 
-/* Pixel trail */
-.hero__pixel-trail {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: auto;
-}
-
-.hero__pixel-dot {
-  background: rgba(19, 174, 83, 0.55);
-  border-radius: 2px;
-}
-
 /* Dot grid */
 .hero__grid-overlay {
   position: absolute;
