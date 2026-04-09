@@ -16,6 +16,11 @@ const SignInPage = lazy(() => import('./pages/SignInPage'))
 const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage'))
 const TermsPage = lazy(() => import('./pages/TermsPage'))
 const LocalCityPage = lazy(() => import('./pages/LocalCityPage'))
+const SATPage = lazy(() => import('./pages/SATPage'))
+const ACTPage = lazy(() => import('./pages/ACTPage'))
+const MathPage = lazy(() => import('./pages/MathPage'))
+const EnglishPage = lazy(() => import('./pages/EnglishPage'))
+const SciencePage = lazy(() => import('./pages/SciencePage'))
 
 function PageLoader() {
   return (
@@ -51,6 +56,11 @@ export default function App() {
                 <Route path="/privacy" element={<PrivacyPolicyPage />} />
                 <Route path="/terms" element={<TermsPage />} />
                 <Route path="/tutoring/:city" element={<LocalCityPage />} />
+                <Route path="/sat-prep" element={<SATPage />} />
+                <Route path="/act-prep" element={<ACTPage />} />
+                <Route path="/math-tutoring" element={<MathPage />} />
+                <Route path="/english-tutoring" element={<EnglishPage />} />
+                <Route path="/science-tutoring" element={<SciencePage />} />
               </Routes>
             </Suspense>
           </main>
