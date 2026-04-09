@@ -23,6 +23,8 @@ const EnglishPage = lazy(() => import('./pages/EnglishPage'))
 const SciencePage = lazy(() => import('./pages/SciencePage'))
 const AboutPage = lazy(() => import('./pages/AboutPage'))
 const ReviewsPage = lazy(() => import('./pages/ReviewsPage'))
+const BlogIndexPage = lazy(() => import('./pages/BlogIndexPage'))
+const BlogPostPage = lazy(() => import('./pages/BlogPostPage'))
 
 function PageLoader() {
   return (
@@ -65,6 +67,8 @@ export default function App() {
                 <Route path="/science-tutoring" element={<SciencePage />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/reviews" element={<ReviewsPage />} />
+                <Route path="/blog" element={<BlogIndexPage />} />
+                <Route path="/blog/:slug" element={<BlogPostPage />} />
               </Routes>
             </Suspense>
           </main>
