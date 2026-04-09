@@ -21,6 +21,8 @@ const ACTPage = lazy(() => import('./pages/ACTPage'))
 const MathPage = lazy(() => import('./pages/MathPage'))
 const EnglishPage = lazy(() => import('./pages/EnglishPage'))
 const SciencePage = lazy(() => import('./pages/SciencePage'))
+const AboutPage = lazy(() => import('./pages/AboutPage'))
+const ReviewsPage = lazy(() => import('./pages/ReviewsPage'))
 
 function PageLoader() {
   return (
@@ -61,6 +63,8 @@ export default function App() {
                 <Route path="/math-tutoring" element={<MathPage />} />
                 <Route path="/english-tutoring" element={<EnglishPage />} />
                 <Route path="/science-tutoring" element={<SciencePage />} />
+                <Route path="/about" element={<AboutPage />} />
+                <Route path="/reviews" element={<ReviewsPage />} />
               </Routes>
             </Suspense>
           </main>
