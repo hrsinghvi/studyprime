@@ -3,6 +3,7 @@ import Hero from '../components/Hero/Hero'
 import Services from '../components/Services/Services'
 import ResultsCarousel from '../components/ResultsCarousel/ResultsCarousel'
 import Stats from '../components/Stats/Stats'
+import SEO from '../components/SEO/SEO'
 
 function HomeCalendly() {
   useEffect(() => {
@@ -37,8 +38,34 @@ function HomeCalendly() {
 }
 
 export default function HomePage() {
+  const homeSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'EducationalOrganization',
+    name: 'Study Prime',
+    url: 'https://studyprime.net',
+    description: 'Expert SAT, ACT, and K-12 subject tutoring across the Bay Area. 95% success rate. Average +280 SAT point improvement.',
+    areaServed: 'Bay Area, CA',
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Tutoring Services',
+      itemListElement: [
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'SAT Prep Tutoring', url: 'https://studyprime.net/sat-prep' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'ACT Prep Tutoring', url: 'https://studyprime.net/act-prep' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Math Tutoring', url: 'https://studyprime.net/math-tutoring' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'English Tutoring', url: 'https://studyprime.net/english-tutoring' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Science Tutoring', url: 'https://studyprime.net/science-tutoring' } },
+      ],
+    },
+  }
+
   return (
     <>
+      <SEO
+        title="Expert SAT, ACT & K-12 Tutoring Bay Area"
+        description="Study Prime: Bay Area's top tutoring service. Expert SAT prep, ACT prep, and K-12 subject tutoring. 95% success rate, average +280 SAT points. Free consultation."
+        canonical="/"
+        schema={homeSchema}
+      />
       <Hero />
       <Stats />
       <Services ctaLabel="Learn More" ctaTo="/services" />

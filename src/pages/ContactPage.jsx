@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import SEO from '../components/SEO/SEO'
 
 export default function ContactPage() {
   useEffect(() => {
@@ -11,6 +12,11 @@ export default function ContactPage() {
 
   return (
     <div style={{ paddingTop: '60px', paddingBottom: '60px' }}>
+      <SEO
+        title="Book a Free Tutoring Consultation | Study Prime"
+        description="Schedule a free 30-minute consultation with Study Prime. We'll assess your needs and match you with the right SAT, ACT, or subject tutor in the Bay Area."
+        canonical="/contact"
+      />
       <div className="container">
         <div className="section-header" style={{ marginBottom: '40px' }}>
           <h2>Schedule a Free Consultation</h2>

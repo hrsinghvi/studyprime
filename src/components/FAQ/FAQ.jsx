@@ -43,6 +43,62 @@ const FAQS = [
     question: 'What if I am not satisfied?',
     answer: 'Your satisfaction matters to us. If you are not happy with a session, let us know and we will work to find a better tutor match or adjust our approach. We take feedback seriously and are committed to making things right.',
   },
+  {
+    question: 'How much can I improve my SAT score with tutoring?',
+    answer: 'On average, Study Prime students improve their SAT score by 280 points over a full prep program. Students starting below 1100 often see gains of 200–350 points, while students already above 1300 typically gain 100–180 additional points. Results depend on starting score, commitment to practice, and time invested. Students who complete all assigned practice work and attend sessions consistently see the strongest gains.',
+  },
+  {
+    question: 'How do I choose between the SAT and ACT?',
+    answer: 'Both tests are accepted equally by all U.S. colleges and universities. The SAT emphasizes evidence-based reading and data analysis, while the ACT includes a science section and moves at a faster pace. We recommend taking one official practice test for each exam. Most students perform similarly on both, but some have a clear preference. Our tutors can help you analyze your practice results and choose the test that plays to your strengths.',
+  },
+  {
+    question: 'What grade levels do you work with?',
+    answer: 'We tutor students from 4th grade through 12th grade, as well as college students who need subject support. Our most common students are middle schoolers building foundational skills and high schoolers preparing for SAT, ACT, or AP exams. We also work with students who are homeschooled or need academic acceleration.',
+  },
+  {
+    question: 'How are sessions structured?',
+    answer: 'Each session typically begins with a review of the previous session\'s material and any assigned practice. The tutor then introduces new concepts, works through problems with the student, and assigns targeted practice for the week. Sessions are adapted based on how the student is progressing — if something clicks quickly, we move forward; if a concept needs more time, we stay until it is mastered.',
+  },
+  {
+    question: 'How many sessions per week do you recommend?',
+    answer: 'For SAT or ACT prep, we typically recommend 1-2 sessions per week for 8-12 weeks, paired with 3-5 hours of independent practice between sessions. For subject tutoring, 1 session per week is effective for most students who are keeping up with classwork. Students who are significantly behind may benefit from 2 sessions per week initially.',
+  },
+  {
+    question: 'Do you tutor for AP exams?',
+    answer: 'Yes. We offer tutoring for AP Calculus AB/BC, AP Statistics, AP Chemistry, AP Biology, AP Physics, AP English Language and Composition, and AP US History. Our AP tutors have scored 5s on these exams and understand exactly what College Board expects.',
+  },
+  {
+    question: 'Can you help with college essay writing?',
+    answer: 'Yes. Our English tutors can help students brainstorm, draft, and refine their college application essays, including the Common App personal statement and supplemental essays. We focus on helping students find their authentic voice while making the essay compelling and polished.',
+  },
+  {
+    question: 'Do you work with students with learning differences?',
+    answer: 'Yes. Several of our tutors have experience working with students who have ADHD, dyslexia, or other learning differences. We adapt our teaching pace, style, and materials to match how each student learns best. Please let us know about any learning accommodations when you contact us so we can find the right tutor match.',
+  },
+  {
+    question: 'What areas of the Bay Area do you serve?',
+    answer: 'Study Prime serves the entire Bay Area, including Fremont, San Francisco, Oakland, Berkeley, San Jose, Mountain View, Palo Alto, Sunnyvale, Cupertino, Livermore, Pleasanton, Dublin, San Ramon, Walnut Creek, Hayward, Union City, San Mateo, Redwood City, Menlo Park, and more. Online tutoring is available to students anywhere in California.',
+  },
+  {
+    question: 'How long are tutoring sessions?',
+    answer: 'Standard sessions are 60 minutes. For intensive test prep or students who need more focused work, 90-minute sessions are also available. We do not recommend sessions shorter than 60 minutes, as it does not provide enough time to review, teach, and practice effectively.',
+  },
+  {
+    question: 'What materials do I need for sessions?',
+    answer: 'For in-person sessions, students should bring their current textbook or test prep materials, a notebook, and a calculator (for math). For online sessions, a stable internet connection, webcam, and microphone are required. We provide all supplemental practice materials — students do not need to purchase any additional books or resources.',
+  },
+  {
+    question: 'How do you track student progress?',
+    answer: 'We track progress through practice test scores, session notes, and regular check-ins with both students and parents. After every few sessions, we provide a brief progress update highlighting strengths, areas for improvement, and next steps. For standardized test prep, we administer full practice tests every 3-4 weeks to measure score improvement accurately.',
+  },
+  {
+    question: 'Is tutoring available on weekends?',
+    answer: 'Yes. We offer sessions 7 days a week, including weekends and evenings. Many of our Bay Area students prefer weekend sessions since school and activities fill weekdays. You can choose your preferred schedule when you contact us, and we will match you with a tutor whose availability fits yours.',
+  },
+  {
+    question: 'How is Study Prime different from other tutoring services?',
+    answer: 'Three things set Study Prime apart. First, tutor quality — we only hire tutors who have personally excelled in what they teach, not just anyone with a college degree. Second, personalization — we do not use one-size-fits-all curricula; every student gets a customized plan based on their assessment. Third, results — our 95% success rate and average +280 SAT point improvement reflect what happens when quality tutors use proven methods with committed students.',
+  },
 ]
 
 function FAQItem({ faq, index, isOpen, onToggle }) {

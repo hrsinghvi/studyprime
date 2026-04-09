@@ -25,7 +25,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'One of the first questions students and parents ask us at Study Prime is: "When should we start SAT prep?" It's a deceptively simple question with a nuanced answer. Start too early and you risk burnout; start too late and you're cramming under pressure. The right timeline depends on your current score, target score, schedule, and how many test attempts you plan to take.',
+          'One of the first questions students and parents ask us at Study Prime is: "When should we start SAT prep?" It\'s a deceptively simple question with a nuanced answer. Start too early and you risk burnout; start too late and you\'re cramming under pressure. The right timeline depends on your current score, target score, schedule, and how many test attempts you plan to take.',
       },
       {
         type: 'p',
@@ -57,7 +57,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'Ninth graders typically don't need to start formal SAT prep yet, but this is a critical time to build the academic habits that will pay off on the SAT. Focus on reading widely—fiction, non-fiction, scientific articles, and opinion pieces. Strengthen your algebra and geometry foundations in math class. Develop strong writing and grammar awareness. These habits compound over time and make formal SAT prep dramatically more effective when you start it in junior year.',
+          'Ninth graders typically don\'t need to start formal SAT prep yet, but this is a critical time to build the academic habits that will pay off on the SAT. Focus on reading widely—fiction, non-fiction, scientific articles, and opinion pieces. Strengthen your algebra and geometry foundations in math class. Develop strong writing and grammar awareness. These habits compound over time and make formal SAT prep dramatically more effective when you start it in junior year.',
       },
       {
         type: 'h3',
@@ -66,12 +66,12 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'Sophomores should take the PSAT in October and treat it as a valuable diagnostic tool. Even though the sophomore PSAT doesn't count for National Merit eligibility, it gives you a genuine baseline score and exposes you to the real test format. After receiving your PSAT scores (typically in December), review your results carefully. Where did you lose points? Was it reading, writing, or math? This data is gold—it shows you exactly what to focus on when you start serious prep.',
+          'Sophomores should take the PSAT in October and treat it as a valuable diagnostic tool. Even though the sophomore PSAT doesn\'t count for National Merit eligibility, it gives you a genuine baseline score and exposes you to the real test format. After receiving your PSAT scores (typically in December), review your results carefully. Where did you lose points? Was it reading, writing, or math? This data is gold—it shows you exactly what to focus on when you start serious prep.',
       },
       {
         type: 'p',
         content:
-          'Some high-achieving sophomores choose to take the actual SAT in spring of 10th grade to get a low-stakes experience with the real test. This is an excellent strategy if you have the bandwidth and won't feel discouraged by a lower initial score.',
+          'Some high-achieving sophomores choose to take the actual SAT in spring of 10th grade to get a low-stakes experience with the real test. This is an excellent strategy if you have the bandwidth and won\'t feel discouraged by a lower initial score.',
       },
       {
         type: 'h3',
@@ -80,7 +80,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'Junior year is when most serious SAT prep happens. The majority of students take the PSAT in October, receive scores in December, and then have until the spring SAT dates (March, May, or June) to prepare. That's roughly 3–6 months of prep time—ideal if used correctly. Junior year is also when the National Merit Scholarship qualifying scores are determined from the PSAT, making solid preparation especially important.',
+          'Junior year is when most serious SAT prep happens. The majority of students take the PSAT in October, receive scores in December, and then have until the spring SAT dates (March, May, or June) to prepare. That\'s roughly 3–6 months of prep time—ideal if used correctly. Junior year is also when the National Merit Scholarship qualifying scores are determined from the PSAT, making solid preparation especially important.',
       },
       {
         type: 'p',
@@ -94,7 +94,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'Seniors have fewer test attempts before application deadlines, but a focused 6–10 week sprint can still yield meaningful improvement—especially for students who've already taken the SAT once and know exactly where their weaknesses lie. Senior fall SAT dates (August, October, November) are most useful. After November, scores may not arrive in time for regular decision deadlines at many schools.',
+          'Seniors have fewer test attempts before application deadlines, but a focused 6–10 week sprint can still yield meaningful improvement—especially for students who\'ve already taken the SAT once and know exactly where their weaknesses lie. Senior fall SAT dates (August, October, November) are most useful. After November, scores may not arrive in time for regular decision deadlines at many schools.',
       },
       {
         type: 'h2',
@@ -103,7 +103,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'Three months is the minimum we recommend for students who already have a baseline score and are aiming for a 100–200 point improvement. Here's how to structure it:',
+          'Three months is the minimum we recommend for students who already have a baseline score and are aiming for a 100–200 point improvement. Here\'s how to structure it:',
       },
       {
         type: 'h3',
@@ -217,7 +217,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'These are averages—some students improve faster, others need more time. The single biggest predictor of success isn't the number of hours; it's whether you're reviewing your mistakes and actively correcting misconceptions, not just redoing problems you already know how to solve.',
+          'These are averages—some students improve faster, others need more time. The single biggest predictor of success isn\'t the number of hours; it\'s whether you\'re reviewing your mistakes and actively correcting misconceptions, not just redoing problems you already know how to solve.',
       },
       {
         type: 'h2',
@@ -226,12 +226,12 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'Virtually every student experiences a "plateau" during SAT prep—a period where scores stop rising even though you're putting in the work. This is normal and expected. Plateaus often occur because students are practicing their strengths rather than aggressively attacking their weaknesses. If your scores stall, it's time to change what you're studying, not how much you're studying.',
+          'Virtually every student experiences a "plateau" during SAT prep—a period where scores stop rising even though you\'re putting in the work. This is normal and expected. Plateaus often occur because students are practicing their strengths rather than aggressively attacking their weaknesses. If your scores stall, it\'s time to change what you\'re studying, not how much you\'re studying.',
       },
       {
         type: 'p',
         content:
-          'You should also expect your score to fluctuate between practice tests. A single score drop doesn't indicate failure—it often reflects fatigue, an unlucky distribution of question types, or simply testing conditions. Look at the trend line across 4–6 practice tests, not individual results.',
+          'You should also expect your score to fluctuate between practice tests. A single score drop doesn\'t indicate failure—it often reflects fatigue, an unlucky distribution of question types, or simply testing conditions. Look at the trend line across 4–6 practice tests, not individual results.',
       },
       {
         type: 'h2',
@@ -240,17 +240,17 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'At Study Prime, we don't use cookie-cutter prep programs. Every student starts with a diagnostic assessment that gives us a precise picture of their current score, specific weakness areas, and ideal learning pace. From there, we build a custom timeline that fits their school schedule, extracurricular commitments, and target test date.',
+          'At Study Prime, we don\'t use cookie-cutter prep programs. Every student starts with a diagnostic assessment that gives us a precise picture of their current score, specific weakness areas, and ideal learning pace. From there, we build a custom timeline that fits their school schedule, extracurricular commitments, and target test date.',
       },
       {
         type: 'p',
         content:
-          'Our tutors meet students where they are—whether that's foundational algebra or advanced evidence-based reading—and systematically close the gaps between their current performance and their target score. We also coach students on time management strategies specific to their score range, because the approach that gets a student from 1100 to 1300 is very different from the approach that gets them from 1400 to 1550.',
+          'Our tutors meet students where they are—whether that\'s foundational algebra or advanced evidence-based reading—and systematically close the gaps between their current performance and their target score. We also coach students on time management strategies specific to their score range, because the approach that gets a student from 1100 to 1300 is very different from the approach that gets them from 1400 to 1550.',
       },
       {
         type: 'p',
         content:
-          'If you're unsure where to start or how to build your SAT timeline, our free consultation is a great first step. We'll review your current scores (or run an initial diagnostic), set a realistic target, and show you exactly what preparation will look like.',
+          'If you\'re unsure where to start or how to build your SAT timeline, our free consultation is a great first step. We\'ll review your current scores (or run an initial diagnostic), set a realistic target, and show you exactly what preparation will look like.',
       },
     ],
   },
@@ -343,7 +343,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'The ACT Science section is a notable differentiator. It doesn't test science knowledge per se—it tests your ability to interpret graphs, data tables, and conflicting scientific viewpoints. Students who are strong visual thinkers and data readers often find this section manageable, while students who overthink scientific concepts may struggle initially.',
+          'The ACT Science section is a notable differentiator. It doesn\'t test science knowledge per se—it tests your ability to interpret graphs, data tables, and conflicting scientific viewpoints. Students who are strong visual thinkers and data readers often find this section manageable, while students who overthink scientific concepts may struggle initially.',
       },
       {
         type: 'h3',
@@ -388,7 +388,7 @@ export const blogPosts = [
         content: [
           'Fast, confident test-takers who are comfortable with a higher pace',
           'Students with strong science backgrounds who are comfortable reading graphs and data',
-          'Students who've taken geometry, trigonometry, and pre-calculus',
+          'Students who\'ve taken geometry, trigonometry, and pre-calculus',
           'Students whose schools emphasize the ACT (especially in Midwest states)',
           'Students who want a single composite number rather than two section scores',
         ],
@@ -421,12 +421,12 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'The single best way to choose between the SAT and ACT is to take a full-length, timed practice test for each. Don't rely on reputation, what your friends took, or vague impressions of which test "sounds easier." Take both under realistic conditions and compare your concordance scores.',
+          'The single best way to choose between the SAT and ACT is to take a full-length, timed practice test for each. Don\'t rely on reputation, what your friends took, or vague impressions of which test "sounds easier." Take both under realistic conditions and compare your concordance scores.',
       },
       {
         type: 'p',
         content:
-          'At Study Prime, we offer free diagnostic sessions where we can administer practice versions of both tests (or evaluate your results if you've already taken them) and give you a clear recommendation on which test gives you the best path to your target score. This single decision can save you hundreds of hours of prep time by ensuring you're not spending energy on the wrong test.',
+          'At Study Prime, we offer free diagnostic sessions where we can administer practice versions of both tests (or evaluate your results if you\'ve already taken them) and give you a clear recommendation on which test gives you the best path to your target score. This single decision can save you hundreds of hours of prep time by ensuring you\'re not spending energy on the wrong test.',
       },
       {
         type: 'h2',
@@ -449,7 +449,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'If you've taken practice tests and aren't sure how to interpret your results or build a prep plan, our tutors at Study Prime are here to help. We'll look at your scores, identify your specific gaps, and build a customized plan that gets you to your goal.',
+          'If you\'ve taken practice tests and aren\'t sure how to interpret your results or build a prep plan, our tutors at Study Prime are here to help. We\'ll look at your scores, identify your specific gaps, and build a customized plan that gets you to your goal.',
       },
     ],
   },
@@ -523,7 +523,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'At the upper end of the score range (1450+), the marginal point becomes harder to earn. You're competing for questions in the highest difficulty tier, where a single conceptual misunderstanding or a careless reading error can cost you 10–20 points. Progress is real but requires more precision.',
+          'At the upper end of the score range (1450+), the marginal point becomes harder to earn. You\'re competing for questions in the highest difficulty tier, where a single conceptual misunderstanding or a careless reading error can cost you 10–20 points. Progress is real but requires more precision.',
       },
       {
         type: 'h2',
@@ -572,7 +572,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'Self-study can work for highly motivated students, but most benefit from expert guidance. A good tutor doesn't just explain concepts—they identify exactly which specific problem types are causing you the most point loss, build a targeted plan around those, and hold you accountable to consistent practice. The efficiency of expert-guided prep often means achieving the same improvement in half the time compared to solo studying.',
+          'Self-study can work for highly motivated students, but most benefit from expert guidance. A good tutor doesn\'t just explain concepts—they identify exactly which specific problem types are causing you the most point loss, build a targeted plan around those, and hold you accountable to consistent practice. The efficiency of expert-guided prep often means achieving the same improvement in half the time compared to solo studying.',
       },
       {
         type: 'h2',
@@ -596,7 +596,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'These are not outliers—they represent what focused, consistent tutoring can achieve. We're transparent with families about what's realistic for their student specifically, because setting expectations accurately is part of our job.',
+          'These are not outliers—they represent what focused, consistent tutoring can achieve. We\'re transparent with families about what\'s realistic for their student specifically, because setting expectations accurately is part of our job.',
       },
       {
         type: 'h2',
@@ -605,7 +605,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'Students who improve the most don't necessarily study the most. They study the most effectively. Here's what that looks like in practice:',
+          'Students who improve the most don\'t necessarily study the most. They study the most effectively. Here\'s what that looks like in practice:',
       },
       {
         type: 'ul',
@@ -639,7 +639,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'We want to be direct: not every student will achieve a 200-point improvement, and not every student needs to. The right target is the score that expands your college options and reflects your genuine capabilities with quality preparation—not the highest possible number on an abstract scale. Our first conversation with every family involves an honest discussion about where their student is starting, where they want to go, what's realistically achievable, and how we'll get there.',
+          'We want to be direct: not every student will achieve a 200-point improvement, and not every student needs to. The right target is the score that expands your college options and reflects your genuine capabilities with quality preparation—not the highest possible number on an abstract scale. Our first conversation with every family involves an honest discussion about where their student is starting, where they want to go, what\'s realistically achievable, and how we\'ll get there.',
       },
     ],
   },
@@ -671,7 +671,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'Math anxiety is one of the most common—and most underestimated—academic challenges students face. It affects students across all grade levels, from kids struggling with fractions in third grade to high schoolers drowning in calculus. The frustrating truth is that many struggling math students aren't lacking intelligence; they're lacking the right approach, the right support, or both.',
+          'Math anxiety is one of the most common—and most underestimated—academic challenges students face. It affects students across all grade levels, from kids struggling with fractions in third grade to high schoolers drowning in calculus. The frustrating truth is that many struggling math students aren\'t lacking intelligence; they\'re lacking the right approach, the right support, or both.',
       },
       {
         type: 'p',
@@ -690,7 +690,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'Other common causes of math struggle include: moving too quickly through content in class, lack of concrete manipulatives and visual representations, high-stakes test anxiety, poor abstract reasoning development, and the belief—often internalized very early—that "I'm just not a math person." That last one is perhaps the most damaging, because it becomes self-fulfilling.',
+          'Other common causes of math struggle include: moving too quickly through content in class, lack of concrete manipulatives and visual representations, high-stakes test anxiety, poor abstract reasoning development, and the belief—often internalized very early—that "I\'m just not a math person." That last one is perhaps the most damaging, because it becomes self-fulfilling.',
       },
       {
         type: 'h2',
@@ -699,12 +699,12 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'When a student gets a D on their algebra test, the instinct is to review that week\'s material. But the failing grade is often a symptom of a gap that started forming months or years earlier. Effective math tutors begin with a thorough diagnostic to identify exactly where the student's conceptual understanding breaks down—not just what topic they're currently studying.',
+          'When a student gets a D on their algebra test, the instinct is to review that week\'s material. But the failing grade is often a symptom of a gap that started forming months or years earlier. Effective math tutors begin with a thorough diagnostic to identify exactly where the student\'s conceptual understanding breaks down—not just what topic they\'re currently studying.',
       },
       {
         type: 'p',
         content:
-          'At Study Prime, we use targeted assessments to pinpoint the precise gap in a student's math progression. We might find that a 9th grader struggling with linear equations actually has weak integer operations from middle school. Fixing that foundational gap produces far faster progress than endlessly re-teaching algebra.',
+          'At Study Prime, we use targeted assessments to pinpoint the precise gap in a student\'s math progression. We might find that a 9th grader struggling with linear equations actually has weak integer operations from middle school. Fixing that foundational gap produces far faster progress than endlessly re-teaching algebra.',
       },
       {
         type: 'h2',
@@ -718,7 +718,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'In math tutoring, this means a student doesn't just practice quadratic equations for an hour and move on. They practice them this week, revisit them briefly next week, and do a short review check the week after. This interleaved approach feels harder in the moment—students feel less fluent during spaced sessions—but produces far more durable learning.',
+          'In math tutoring, this means a student doesn\'t just practice quadratic equations for an hour and move on. They practice them this week, revisit them briefly next week, and do a short review check the week after. This interleaved approach feels harder in the moment—students feel less fluent during spaced sessions—but produces far more durable learning.',
       },
       {
         type: 'h2',
@@ -746,7 +746,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'Many students struggle with abstract math because their instruction skipped or rushed the concrete and representational stages. A student who struggles with fraction division benefits enormously from working through it with fraction tiles or visual area models before tackling the abstract "invert and multiply" algorithm. The abstraction makes sense when it's anchored to something concrete.',
+          'Many students struggle with abstract math because their instruction skipped or rushed the concrete and representational stages. A student who struggles with fraction division benefits enormously from working through it with fraction tiles or visual area models before tackling the abstract "invert and multiply" algorithm. The abstraction makes sense when it\'s anchored to something concrete.',
       },
       {
         type: 'h2',
@@ -755,7 +755,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'Metacognition—thinking about your own thinking—is a powerful predictor of academic success. Effective math tutors explicitly teach students to monitor their own understanding, check their work systematically, and develop self-correction habits. Instead of just identifying that an answer is wrong, they teach students to ask: "Where in my process did I go wrong? What assumption did I make that wasn't valid? What should I do differently next time?"',
+          'Metacognition—thinking about your own thinking—is a powerful predictor of academic success. Effective math tutors explicitly teach students to monitor their own understanding, check their work systematically, and develop self-correction habits. Instead of just identifying that an answer is wrong, they teach students to ask: "Where in my process did I go wrong? What assumption did I make that wasn\'t valid? What should I do differently next time?"',
       },
       {
         type: 'p',
@@ -769,12 +769,12 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'Carol Dweck\'s research on growth vs. fixed mindset has profound implications for math tutoring. Students who believe their math ability is fixed ("I'm just not a math person") give up faster, avoid challenge, and interpret mistakes as confirmation of their limitations. Students with a growth mindset view challenges as opportunities and treat errors as data.',
+          'Carol Dweck\'s research on growth vs. fixed mindset has profound implications for math tutoring. Students who believe their math ability is fixed ("I\'m just not a math person") give up faster, avoid challenge, and interpret mistakes as confirmation of their limitations. Students with a growth mindset view challenges as opportunities and treat errors as data.',
       },
       {
         type: 'p',
         content:
-          'Effective tutors actively work to shift students toward a growth mindset. This means praising process over results ("You tried a smart approach there, let's figure out where it broke down") rather than praising intelligence ("You're so smart"). It also means explicitly normalizing errors—sharing that making mistakes is how mathematicians actually work, and modeling how to respond to errors productively.',
+          'Effective tutors actively work to shift students toward a growth mindset. This means praising process over results ("You tried a smart approach there, let\'s figure out where it broke down") rather than praising intelligence ("You\'re so smart"). It also means explicitly normalizing errors—sharing that making mistakes is how mathematicians actually work, and modeling how to respond to errors productively.',
       },
       {
         type: 'h2',
@@ -797,7 +797,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'It's not always obvious when informal homework help crosses into a need for structured tutoring support. Look for these signals:',
+          'It\'s not always obvious when informal homework help crosses into a need for structured tutoring support. Look for these signals:',
       },
       {
         type: 'ul',
@@ -818,12 +818,12 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'At Study Prime, our math tutors are carefully selected for both content mastery and teaching ability. We work with students from elementary arithmetic through AP Calculus and SAT/ACT math, and we tailor our approach to each student's specific gaps, learning style, and goals. Our sessions are interactive—not lecture-based—and we maintain detailed progress notes so every session builds on the last.',
+          'At Study Prime, our math tutors are carefully selected for both content mastery and teaching ability. We work with students from elementary arithmetic through AP Calculus and SAT/ACT math, and we tailor our approach to each student\'s specific gaps, learning style, and goals. Our sessions are interactive—not lecture-based—and we maintain detailed progress notes so every session builds on the last.',
       },
       {
         type: 'p',
         content:
-          'We also work closely with parents to provide transparent updates on what we're working on, what improvement looks like, and what you can do at home to reinforce learning between sessions. If you're unsure whether tutoring is the right fit for your child, our free consultation is a no-pressure opportunity to discuss your situation and get our honest assessment.',
+          'We also work closely with parents to provide transparent updates on what we\'re working on, what improvement looks like, and what you can do at home to reinforce learning between sessions. If you\'re unsure whether tutoring is the right fit for your child, our free consultation is a no-pressure opportunity to discuss your situation and get our honest assessment.',
       },
     ],
   },
@@ -855,7 +855,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'There's no single "right" time to start SAT prep that applies to every student. The ideal start date depends on your grade, your current academic skills, your target score, and your college timeline. What's universal is this: students who start earlier with a clear plan consistently outperform students who start late—even when the late starters put in more hours.',
+          'There\'s no single "right" time to start SAT prep that applies to every student. The ideal start date depends on your grade, your current academic skills, your target score, and your college timeline. What\'s universal is this: students who start earlier with a clear plan consistently outperform students who start late—even when the late starters put in more hours.',
       },
       {
         type: 'p',
@@ -869,7 +869,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'Freshmen shouldn't be drilling SAT questions—that's genuinely too early for formal test prep. But this is an extraordinarily important year for building the academic skills that will determine your SAT ceiling later. The habits you form in ninth grade about reading, writing, and mathematical thinking will either accelerate or handicap your SAT preparation in junior year.',
+          'Freshmen shouldn\'t be drilling SAT questions—that\'s genuinely too early for formal test prep. But this is an extraordinarily important year for building the academic skills that will determine your SAT ceiling later. The habits you form in ninth grade about reading, writing, and mathematical thinking will either accelerate or handicap your SAT preparation in junior year.',
       },
       {
         type: 'p',
@@ -897,12 +897,12 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'Sophomore year is when your SAT journey officially begins, primarily through the PSAT 10 or PSAT/NMSQT. Most high schools administer the PSAT in October. Sophomores should take this test seriously—not because the sophomore PSAT counts for National Merit (it doesn't), but because it gives you an invaluable baseline diagnostic.',
+          'Sophomore year is when your SAT journey officially begins, primarily through the PSAT 10 or PSAT/NMSQT. Most high schools administer the PSAT in October. Sophomores should take this test seriously—not because the sophomore PSAT counts for National Merit (it doesn\'t), but because it gives you an invaluable baseline diagnostic.',
       },
       {
         type: 'p',
         content:
-          'When you receive your PSAT scores in December, spend real time reviewing them. The College Board provides a detailed score report showing exactly which question categories gave you trouble. This data is the foundation of a smart, targeted prep plan. Many students ignore their PSAT scores or glance at the overall number without engaging with the diagnostic detail—that's a missed opportunity.',
+          'When you receive your PSAT scores in December, spend real time reviewing them. The College Board provides a detailed score report showing exactly which question categories gave you trouble. This data is the foundation of a smart, targeted prep plan. Many students ignore their PSAT scores or glance at the overall number without engaging with the diagnostic detail—that\'s a missed opportunity.',
       },
       {
         type: 'h3',
@@ -930,7 +930,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'The single most impactful thing you can do in junior year is start formal SAT prep early—ideally by November or December of fall semester, or by January at the latest if you're targeting a March or May test date. Starting in February for a March test is too late for meaningful improvement beyond the 50-point range.',
+          'The single most impactful thing you can do in junior year is start formal SAT prep early—ideally by November or December of fall semester, or by January at the latest if you\'re targeting a March or May test date. Starting in February for a March test is too late for meaningful improvement beyond the 50-point range.',
       },
       {
         type: 'h3',
@@ -964,7 +964,7 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'The PSAT Selection Index score threshold varies by state and year, but in California it typically falls around 220 (out of 240). That's roughly equivalent to a 1460–1500 SAT score. Students aiming for National Merit recognition should target specific PSAT preparation—not just general SAT prep—because the PSAT has slightly different emphasis and time constraints.',
+          'The PSAT Selection Index score threshold varies by state and year, but in California it typically falls around 220 (out of 240). That\'s roughly equivalent to a 1460–1500 SAT score. Students aiming for National Merit recognition should target specific PSAT preparation—not just general SAT prep—because the PSAT has slightly different emphasis and time constraints.',
       },
       {
         type: 'h2',
@@ -973,12 +973,12 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'Many seniors assume the SAT window has closed by the time they start 12th grade. In most cases it hasn't—but the timeline is tighter and the strategy needs to be sharper. Senior fall test dates (August and October) are the most useful. The November SAT is the last viable date for most early decision and early action applications, and December scores may arrive too late for regular decision deadlines at some schools.',
+          'Many seniors assume the SAT window has closed by the time they start 12th grade. In most cases it hasn\'t—but the timeline is tighter and the strategy needs to be sharper. Senior fall test dates (August and October) are the most useful. The November SAT is the last viable date for most early decision and early action applications, and December scores may arrive too late for regular decision deadlines at some schools.',
       },
       {
         type: 'p',
         content:
-          'Seniors who want to retake the SAT should approach it differently than juniors. You already have an official score and real test experience. A focused 6–10 week sprint targeting your specific weaknesses—not broad review—is usually more effective than starting over with a comprehensive program. The goal is surgical improvement in the areas where you're losing the most points.',
+          'Seniors who want to retake the SAT should approach it differently than juniors. You already have an official score and real test experience. A focused 6–10 week sprint targeting your specific weaknesses—not broad review—is usually more effective than starting over with a comprehensive program. The goal is surgical improvement in the areas where you\'re losing the most points.',
       },
       {
         type: 'h3',
@@ -1002,17 +1002,17 @@ export const blogPosts = [
       {
         type: 'p',
         content:
-          'We've seen both ends of this spectrum at Study Prime. Students who start early with a thoughtful plan don't just score higher—they score higher with less stress. They have time to take multiple practice tests, identify their specific weaknesses, build genuine skill rather than surface-level tricks, and approach test day with confidence from repeated experience.',
+          'We\'ve seen both ends of this spectrum at Study Prime. Students who start early with a thoughtful plan don\'t just score higher—they score higher with less stress. They have time to take multiple practice tests, identify their specific weaknesses, build genuine skill rather than surface-level tricks, and approach test day with confidence from repeated experience.',
       },
       {
         type: 'p',
         content:
-          'Last-minute preparation can produce small gains through strategy familiarization and test anxiety reduction. But it cannot close fundamental skill gaps that require weeks of deliberate practice to address. The students who most commonly tell us "I wish I'd started sooner" are juniors who began in March for a March test and seniors who realized in October that their score wasn't going to move without more time.',
+          'Last-minute preparation can produce small gains through strategy familiarization and test anxiety reduction. But it cannot close fundamental skill gaps that require weeks of deliberate practice to address. The students who most commonly tell us "I wish I\'d started sooner" are juniors who began in March for a March test and seniors who realized in October that their score wasn\'t going to move without more time.',
       },
       {
         type: 'p',
         content:
-          'If you're reading this and wondering whether it's too late to start—reach out to us. Depending on your test date and starting score, there may be more opportunity than you think. Our first step is always an honest assessment of what's realistic given your timeline.',
+          'If you\'re reading this and wondering whether it\'s too late to start—reach out to us. Depending on your test date and starting score, there may be more opportunity than you think. Our first step is always an honest assessment of what\'s realistic given your timeline.',
       },
     ],
   },

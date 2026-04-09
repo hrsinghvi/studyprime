@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin
+Disallow: /private
+Disallow: /sign-in
+
+Sitemap: https://studyprime.net/sitemap.xml
